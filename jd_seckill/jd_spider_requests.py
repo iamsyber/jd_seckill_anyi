@@ -302,6 +302,7 @@ class JdTdudfp:
         try:
             # 是否开启自动获取eid和fp,默认为true，开启。设置为false，请自行配置eid和fp
             open_auto_get_eid_fp = global_config.getRaw('config', 'open_auto_get_eid_fp')
+            logger.info('是否开启自动获取eid和fp：'+open_auto_get_eid_fp)
             if open_auto_get_eid_fp == 'false':
                 # 如果配置false，直接返回false
                 return jd_tdudfp
